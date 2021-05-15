@@ -16,43 +16,38 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"> 
 </head>
 <body>
-        <header id="header">
-            <div class="py-4 px-1">
-                <ul class="flex px-8">
-                    <li class="mr-10">
-                      <p class="text-gray-300 font-bold font-mono" >Home</p>
-                    </li>
-                    <li class="mr-10">
-                      <a class="text-gray-800 font-bold font-mono hover:text-gray-300 hover:underline" href="projects.html">Projects</a>
-                    </li>
-                </ul>
+        <header class="text-gray-600 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <span class="ml-3 text-xl font-mono">Stanislav Chmulev</span>
+              </a>
+              <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mx-8 mr-5 inline-flex text-gray-300 bg-gray-100 border-0 py-1 px-4 font-bold font-mono focus:outline-none rounded text-lg">Home</a>
+                <a class="mr-5 inline-flex text-gray-700 bg-gray-100 border-0 py-1 px-4 font-bold font-mono focus:outline-none hover:bg-gray-200 rounded text-lg" href="projects.html">Projects</a>
+              </nav>
             </div>
-            <div class="px-8">
+            <div class="px-12">
                 <hr>
             </div>
-        </header>
-        <main id="main" class="container px-1 lg:px-2 md:px-5 xl:px-60 py-2 md:py-5 xl:py-10 mx-auto text-center mt-2">
+          </header>
+        <main id="main" class="container text-gray-800 px-2 flex items-center justify-center flex-col lg:px-2 md:px-5 xl:px-32 py-2 md:py-5 xl:py-10 mx-auto text-center mt-2 mb-2">
 
-            <div class="flex flex-wrap justify-center items-center">
-                <img src="static/images/helo.png" alt="hello!" width="10%" height="10%">
-            </div>
+            <img src="static/images/helo.png" alt="hello!" width="10%" height="10%">
 
             <h1 class="font-mono text-2xl py-6">Hi there!</h1>
             <p class="font-mono">I'm a self-taught web developer, specializing in backend work using Python, Django.</p>
 
-                <p class="font-mono text-2xl mt-16">INFO</p>
+                <p class="font-mono text-2xl mt-16 mb-2">INFO</p>
                 <p class="font-mono py-1"><a class="underline" href="https://drive.google.com/uc?id=1FOnl6UHE5avi8LXVw9L3dhVeE8K7EVR3&export=download">resume.pdf</a></p>
                 <p class="font-mono py-1">stanislavchmlv@gmail.com</p>
-                <p class="font-mono py-1">Telegram: +7 919 287-29-01</p>
+                <p class="font-mono py-1">+7 919 287-29-01</p>
                 <p class="font-mono py-1">GitHub: <a class="underline" href="https://github.com/lawxls">@lawxls</a></p>
                 <p class="font-mono py-1">HackerRank: <a class="underline" href="https://www.hackerrank.com/lawxls">@lawxls</a></p>
 
             <br>
 
             <p class="font-mono text-2xl mt-8 py-2">PROFESSIONAL SKILLS</p>
-            <div class="flex flex-wrap justify-center items-center">
                 <img src="static/images/skills.png" alt="skills and tools" width="75%" height="75%">
-            </div>
 
             <p class="font-mono py-1">Programming languages: Python (2 years), JavaScript (Basics)</p>
             <p class="font-mono py-1">Technologies: Django, DRF, PostgreSQL, Redis, Celery, NginX, Docker, TailwindCSS</p>
@@ -63,9 +58,7 @@
             <p class="font-mono py-1">Languages: Russian (Native), English (Fluent)</p>
 
             <p class="font-mono text-2xl mt-16">PROJECTS</p>
-            <div class="flex flex-wrap justify-center items-center">
                 <img src="static/images/letter_logo.png" alt="skills and tools" width="10%" height="10%">
-            </div>
             <a href="projects.html">
                 <p class="font-mono">HN CUSTOM NEWSLETTERS</p>
             </a>
@@ -77,22 +70,29 @@
             </p>
             <div class="mt-8">&nbsp;</div>
         </main>
-        <footer id="footer" class="text-gray-600 body-font">
-            <div class="px-8">
+        <footer class="text-gray-600 body-font">
+            <div class="bg-purple-100">
                 <hr>
-                <div class="container mx-auto text-center py-2">
-                  <p class="text-gray-500 text-sm text-center">© 2021 Stanislav Chmulev</p>
-                </div>
-                <div class="flex flex-wrap justify-center items-center py-2">
-                    <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/%D1%81%D1%82%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2-%D1%87%D0%BC%D1%83%D0%BB%D0%B5%D0%B2-5a505a207/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#8D8E90"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
-                    </a>
-                    <a class="ml-3 text-gray-500" href="https://github.com/lawxls">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#8D8E90"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    </a>
-                </div>
+              <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-black my-2 text-sm text-center sm:text-left font-mono">© 2021 —
+                  <a href="https://stanislavchmulev.xyz/" rel="noopener noreferrer" class="text-black ml-1 hover:text-gray-300 hover:underline font-mono" target="_blank">Stanislav Chmulev</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                  <a class="ml-3 text-gray-500" href="https://t.me/lawxls">
+                    <svg id="Bold" enable-background="new 0 0 24 24" width="32px" height="32px" viewBox="0 0 24 24" fill="#65AADD" xmlns="http://www.w3.org/2000/svg"><path d="m12 24c6.629 0 12-5.371 12-12s-5.371-12-12-12-12 5.371-12 12 5.371 12 12 12zm-6.509-12.26 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"/></svg>
+                  </a>
+                  <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/%D1%81%D1%82%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2-%D1%87%D0%BC%D1%83%D0%BB%D0%B5%D0%B2-5a505a207/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="#0077b7"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
+                  </a>
+                  <a class="ml-3 text-gray-500" href="https://www.hackerrank.com/lawxls">
+                    <svg width="32px" height="32px" viewBox="0 0 24 24" role="img" fill="#1BA94C" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24s-9.75-4.885-10.395-6c-.641-1.115-.641-10.885 0-12C2.25 4.886 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.908h.701c.141 0 .254-.115.254-.258 0-.094-.049-.176-.123-.221L9.223 4.92c-.049-.063-.141-.109-.226-.109-.084 0-.16.045-.207.107L7.11 6.43c-.072.045-.12.126-.12.218 0 .143.113.258.255.258h.704l.008 10.035c0 .145.111.258.254.258h1.492c.142 0 .259-.115.259-.256v-4.004h4.073v4.152h-.699c-.143 0-.256.115-.256.258 0 .092.048.174.119.219l1.579 1.51c.044.061.141.109.225.109.085 0 .159-.045.208-.109l1.679-1.51c.072-.045.12-.127.12-.219 0-.143-.115-.258-.255-.258h-.704l-.007-10.034c0-.145-.114-.26-.255-.26h-1.494v.002z"/></svg>
+                  </a>
+                  <a class="ml-3 text-gray-500" href="https://github.com/lawxls">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#242F6E"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                </span>
+              </div>
             </div>
-        </footer>
-
+          </footer>
 </body>
 </html>
